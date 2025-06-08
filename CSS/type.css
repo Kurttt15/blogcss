@@ -1,0 +1,93 @@
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 版型 */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.wrap{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header{
+    max-width: 1920px;
+    background: lightgray;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.home{
+    padding-right: 25px;
+}
+.footer{
+    max-width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.mail{
+    font-size: 16px;
+}
+.social-items{
+    display: flex;
+}
+.social-items img{
+    max-width: 70%;     
+    height: auto;    /* 保持比例 */
+}
+.copyright p{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width:992px) {
+	.content-1{
+		padding: 0 15px;
+	}
+    .content-2{
+		padding: 0 15px;
+	}
+}
+@media (max-width:767px) {
+	.footer{
+		flex-direction: column;
+        align-items: flex-start;
+	}
+}

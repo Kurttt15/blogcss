@@ -1,0 +1,1480 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 版型 */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.wrap{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header{
+    max-width: 1920px;
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.home{
+    padding-right: 25px;
+}
+.footer{
+    max-width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid grey;
+}
+.mail{
+    font-size: 16px;
+}
+.social-items{
+    display: flex;
+}
+.social-items img{
+    max-width: 70%;     
+    height: auto;    /* 保持比例 */
+}
+.copyright p{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+/* BLOG DETAIL */
+
+.content-1{
+    display: flex;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    max-width: 1920px;
+    align-items: center;
+}
+.banner img{
+  max-width: 100%;   
+  height: auto;
+}
+
+.bannerword{
+    padding: 15px;
+}
+.bannerword h3{
+    font-size: 25px;
+    color: black;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    line-height: 1.5;
+    font-weight:bold ;
+}
+.time{
+    font-size: 12px;
+    line-height: 2;
+
+}
+.tag{
+    font-size: 16px;
+    color: blue;
+    line-height: 1.5;
+    font-weight:bold ;
+    display: flex;
+    gap:8px;
+}
+.tag a{
+    background: blue;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    border-radius: 15px;
+    padding: 5px;
+    line-height: 1;
+}
+
+.content-2{
+    max-width: 636px;
+
+    margin: 0 auto;
+}
+
+.content-2 img{
+  max-width: 100%;   
+  height: auto;
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+.content-2 h2{
+    font-size: 20px;
+    color: blue;
+    font-weight:bold ;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.content-2 h4{
+    font-size: 15px;
+    font-weight:bold ;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.content-2 p{
+    line-height: 1.5;
+}
+.span{
+    max-width: 100%;
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 20px;
+    line-height: 1.5;
+    font-weight:bold ;
+    margin: 15px 0;
+}
+
+.article-btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 48px;
+}
+.pre,.next{
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+.article-btn a{
+    text-decoration: none;
+    color: gray;
+}
+
+/* BLOG */
+
+.blog-bn{
+    max-width: 1920px;
+    display: flex;
+}
+.blog-bn img{
+    max-width: 100%;
+}
+.bn-l{
+    position: relative;
+}
+.bn-l h1{
+    position: absolute;
+    top: 300px;
+    padding-left: 80px;
+    font-size: 50px;
+    color: blue;
+    font-weight:bold ;
+}
+.blog-bn h2 {
+    position: absolute;
+    top: 370px;
+    padding-left: 80px;
+    font-size: 20px;
+    color: blue;
+    font-weight:bold ;
+}
+.bannerword p{
+    line-height: 1.5;
+    font-weight: bold; 
+}
+.more{
+    padding-top: 20px;
+}
+.more a{
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    text-decoration: none;
+}
+
+.blog-topic-A{
+    margin:0 auto;
+    display: flex;
+    max-width: 1920px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: center;
+}
+.blog-topic-A img{
+    max-width: 100%;
+}
+.topic h2{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    line-height: 1.5;
+    font-weight:bold ;
+}
+.topic p{
+    height: 48px;
+    margin-bottom:25px ;
+    color: gray;
+    line-height: 1.5;
+  overflow:hidden;
+}
+.topic a{
+    width: 100px;
+    padding: 10px;
+    color: gray;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.tag a{
+    background: blue;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    border-radius: 15px;
+    padding: 5px;
+    line-height: 1;
+    max-width: 60px;
+}
+
+.blog-topic-B{
+    margin:0 auto;
+    display: flex;
+    max-width: 1920px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: center;
+}
+.blog-topic-B img{
+    max-width: 100%;
+}
+
+.blog-topic-C{
+    margin:0 auto;
+    display: flex;
+    max-width: 1920px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: center;
+}
+.blog-topic-C img{
+    max-width: 100%;
+}
+
+.blog-topic-D{
+    margin:0 auto;
+    display: flex;
+    max-width: 1920px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: center;
+}
+.blog-topic-D img{
+    max-width: 100%;
+}
+
+
+.item-12 {
+  width: 770px;
+  height: 50px;
+  background: white; 
+  margin: 20px;
+}
+
+.item-1{
+    margin: 20px;
+}
+.item-2{
+    margin: 20px;
+}
+.item-3{
+    margin: 20px;
+}
+.item-4{
+    margin: 20px;
+}
+.item-5{
+    margin: 20px;
+}
+.item-6{
+    margin: 20px;
+}
+.item-6{
+    margin: 20px;
+}
+.item-7{
+    margin: 20px;
+}
+.item-8{
+    margin: 20px;
+}
+.item-9{
+    margin: 20px;
+}
+.item-10{
+    margin: 20px;
+}
+.item-11{
+    margin: 20px;
+}
+
+.list{
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.liststyle{
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    justify-content: center;
+}
+.liststyle a{
+    padding: 10px 10px;
+    text-decoration: none;
+    color: grey;
+}
+.liststyle a.list-btn2 {
+  color: blue;
+}
+.search{
+    padding-left: 100px;
+    padding-top: 20px;
+}
+.search-block{
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 300px;
+    border: 1px solid grey;
+    color: gray;
+}
+
+
+
+/* index */
+
+.blog-bn{
+    position: relative;
+
+}
+.intro{
+    max-width: 1077px;
+    padding: 30px 10px;
+    position: absolute;
+    top: 480px;
+    right: 20px;
+    background: white;
+}
+
+
+.title1 h1{
+    padding-top: 120px;
+    padding-bottom: 20px;
+    padding-left: 150px;
+    font-size: 30px;
+    font-weight:bold ;
+    
+}
+.service{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1070px;
+    padding: 20px 150px;
+    position: relative;
+}
+.function-1-R{
+    max-width: 480px;
+    background: white;
+    padding: 20px;
+    position: absolute;
+    top: 40px;
+    right: 150px;
+}
+.function-1-R h3{
+    font-size: 25px;
+    color: black;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    line-height: 1.5;
+    font-weight:bold ;
+}
+.line{
+    width: 50px;
+    height: 2px;
+    background: blue;
+}
+.function-1-block p{
+    color: gray;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+
+.service2{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1070px;
+    padding: 20px 150px;
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+.function-2-L h3{
+    font-size: 25px;
+    color: black;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    line-height: 1.5;
+    font-weight:bold ;
+}
+.function-2-block p{
+    color: gray;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.function-2-L{
+    max-width: 480px;
+    background: white;
+    padding: 20px;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+
+}
+
+
+.service3{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1070px;
+    padding: 20px 150px;
+    position: relative;
+}
+
+.service4{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1070px;
+    padding: 20px 150px;
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+.function-2-L h3{
+    font-size: 25px;
+    color: black;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    line-height: 1.5;
+    font-weight:bold ;
+}
+.function-2-block p{
+    color: gray;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.function-2-L{
+    max-width: 480px;
+    background: white;
+    padding: 20px;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+
+}
+.moreinfo{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 130px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid grey;
+}
+.moreinfo span{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.moreinfo a{
+    display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.title h2{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 150px;
+    font-size: 30px;
+    font-weight:bold ;
+}
+.highlight{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1920px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+}
+.highlight img{
+    max-width: 100%;
+}
+.left-btn,.right-btn{
+    display: flex;
+    justify-content: center;   /* 水平置中 */
+    align-items: center;       /* 垂直置中 */
+}
+
+
+.example{
+    display: flex;
+    max-width: 1300px;
+    justify-content: center;   /* 水平置中 */
+    align-items: center;       /* 垂直置中 */
+    padding: 10px 150px;
+}
+.example-words{
+    position: relative;
+}
+.example-pic {
+  width: 100%;
+  max-width: 375px;
+  height: 500px;      /* 固定成正方形 */
+  overflow: hidden;   /* 裁切溢出 */
+  border: 20px solid lightgray;
+}
+
+
+.example-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* 等比例裁切填滿容器 */
+}
+.words-up{
+    max-width: 526px;
+    background: white;
+    padding: 50px 20px;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+      z-index: 1; /* 白色層級較低 */
+}
+.words-down{
+    max-width: 526px;
+    background: lightgrey;
+    padding: 50px 20px;
+    border: 20px solid white;
+    margin-top: 40px;
+    position: relative;   /* 加上定位才能作用 z-index */
+    z-index: 2;            /* 灰色層級較高，會顯示在白色前面 */
+}
+.words-down a{
+    width: 100px;
+    padding: 10px;
+    color: blue;
+    border-radius: 20px;
+    border: 1px solid blue;
+    text-decoration: none;
+}
+.askpeople{
+    padding: 30px 0px;
+}
+.askpeoplecontent{
+    max-width: 955px;
+    background: lightgray;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+.askpeoplecontent h5{
+    font-size: 18px;
+    font-weight:bold ;
+    padding: 10px 0px;
+}
+.askpeoplecontent p{
+    font-size: 15px;
+    line-height: 2;
+}
+.separate{
+    border-bottom:1px solid black ;
+    padding-bottom: 5px;
+}
+.askpeoplecontent a{
+    padding: 8px;
+    color: grey;
+    border-radius: 20px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.podcast{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.sub{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 1920px;
+    justify-content: center;
+}
+.sub-1{
+    width: 632px;
+    height: 450px;
+    overflow: hidden;
+    flex-shrink: 0;
+
+}
+.sub-2{
+    width: 632px;
+    height: 450px;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+.sub img{
+    object-fit: cover;  /* 等比例裁切填滿容器 */
+    width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.sub-text{
+    background: white;
+    padding: 40px;
+    max-width: 500px;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+}
+.sub-text h2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight:bold ;
+}
+.sub-text p1{
+    font-size: 14px;
+    color: black;
+    line-height: 3;
+}
+.sub-text p{
+    font-size: 14px;
+    line-height: 2;
+    color: gray;
+    background: lightgrey;
+}
+.sub-text a{
+    padding: 8px;
+    color: grey;
+    border-radius: 20px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+.contact{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.contact h2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight:bold ;
+}
+.contact-btn{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+.contact-btn a {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* icon 和文字之間的距離 */
+  text-decoration: none;
+  color: #333;
+  
+}
+.contact{
+    font-size: 18px;
+    line-height: 2;
+}
+
+/* RWD */
+
+
+
+
+
+
+
+
+@media (max-width:992px) {
+    .content-1{
+    	flex-direction: column;
+        align-items: flex-start;
+    }
+    .bannerword{
+        padding:30px 30px;
+        flex-wrap: wrap;
+    }
+    .banner2 {
+        flex-wrap: wrap;
+    }
+    .content-2{
+		padding: 0 5%;
+	}
+    .blog-bn{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .blog-topic-A{
+        flex-wrap: wrap;
+        padding: 5% 10%;
+    
+    }
+    .blog-topic-B{
+        flex-wrap: wrap;
+        padding: 5% 10%;
+    }
+    .blog-topic-C{
+        flex-wrap: wrap;
+        padding: 5% 10%;
+    }
+    .blog-topic-D{
+        flex-wrap: wrap;
+        padding: 5% 10%;
+    }
+    .bn-l h1{
+    position: absolute;
+    top: 100px;
+    padding-left: 60px;
+    }
+    .blog-bn h2 {
+    position: absolute;
+    top: 160px;
+    padding-left: 60px;
+    }
+    .search{
+    padding-left: 80px;
+    padding-top: 20px;
+    }
+
+}
+@media (max-width:767px) {
+
+    .content-1{
+    	flex-direction: column;
+        align-items: flex-start;
+    }
+    .banner2 {
+        flex-wrap: wrap;
+    }
+    
+    .content-2{
+		padding: 0 5%;
+    }    
+    .bannerword{
+        padding:10px 10px;
+        flex-wrap: wrap;
+    }
+    .footer{
+        justify-content: center;
+    }
+    .blog-topic-A{
+        flex-wrap: wrap;
+        padding: 5% 10%;
+    }
+    .blog-topic-B{
+        flex-wrap: wrap;
+        padding: 5% 10%;
+    }
+    .bn-l h1{
+    position: absolute;
+    top: 100px;
+    padding-left: 60px;
+    }
+    .blog-bn h2 {
+    position: absolute;
+    top: 160px;
+    padding-left: 60px;
+    }
+    .search{
+    justify-content: center;
+    align-items: center;
+    }
+
+}
+@media (max-width:375px){
+    .content-1{
+    	flex-direction: column;
+        align-items: flex-start;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .banner2{
+        flex-wrap: wrap;
+    }
+    .banner{
+        max-width: 100%;
+    }
+    .content-2{
+		padding: 0 10%;
+	}
+    .bannerword h3{
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .footer{
+        justify-content: center;
+    }
+    .blog-topic-A{
+        flex-wrap: wrap;
+        padding: 5% 10%;
+    }
+    .blog-topic-B{
+        flex-wrap: wrap;
+        padding: 5% 10%;
+    }
+    .bn-l h1{
+    position: absolute;
+    top: 100px;
+    padding-left: 60px;
+    }
+    .blog-bn h2 {
+    position: absolute;
+    top: 160px;
+    padding-left: 60px;
+    }
+    .search{
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+
+
+}
+
+@media (max-width:992px) {
+    .intro{
+    padding: 30px 30px;
+    position: absolute;
+    top: 560px;
+    margin-left: 20px;
+    justify-content: center;
+    background: white;
+    align-items: center;
+    }
+    .service{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        
+    }
+    .service2{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    .service3{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    .service4{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    .function-1-L img{
+        max-width: 100%;
+
+    }
+    .function-1-R{
+    max-width: 480%;
+    background: white;
+    padding: 20px;
+    position: static;
+    }
+    .function-2-R img{
+        max-width: 100%;
+
+    }
+    .function-2-L{
+    max-width: 480%;
+    background: white;
+    padding: 20px;
+    position: static;
+    }
+    .function-4-R img{
+        max-width: 100%;
+
+    }
+    .function-4L{
+    max-width: 480%;
+    background: white;
+    padding: 20px;
+    position: static;
+    }
+    .moreinfo{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px;
+}
+    .highlight{
+        flex-wrap: wrap;
+        padding: 5% 10%;
+        flex-direction: column;
+    }
+    
+  .left-btn,
+  .right-btn {
+    order: 3; /* 排到最下方 */
+    width: 100%; 
+    justify-content: center; 
+    padding: 0 20px;
+    display: flex;
+  }
+
+  .left-btn a img{
+    width: 60px;
+  }
+  .right-btn a img {
+    width: 55px; 
+  }
+  .example{
+    flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        position: relative;
+  }
+
+  .words-up {
+    max-width: 100%;
+    background: white;
+    padding: 30px 20px;
+    position: static; /* 取消原本的 absolute */
+    top: auto;
+    left: auto;
+    z-index: auto;
+    margin: 20px auto; /* 置中 */
+  }
+  .example-words{
+    top: 500px;
+    justify-content: center;
+    position: static;
+    max-width: 300px;
+  }
+    .example{
+    flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        position: relative;
+  }
+  .example-pic img{
+    max-width: 100%;
+  }
+
+  .example-words{
+    justify-content: center;
+    position: static;
+    max-width: 100%;
+  }
+  .words-down{
+    max-width: 100%;
+  }
+.askpeoplecontent{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+  }
+  .askpeople{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .people1{
+    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 300px;
+  }
+  .people2{
+    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 300px;
+  }
+  .people3{
+    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 300px;
+  }
+  .people4{
+    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 300px;
+  }
+  .sub{
+     flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+  }
+  .sub img{
+    max-width: 100%;
+  }
+    .contact h2{
+    padding-left: 20px;
+  }
+  .contact-btn{
+        flex-wrap: wrap;
+    display: flex;
+    padding: 20px;
+}
+
+}
+
+
+
+@media (max-width:767px) {
+    .intro{
+    padding: 30px 30px;
+    position: absolute;
+    
+    margin-left: 20px;
+    justify-content: center;
+    background: white;
+    align-items: center;
+    }
+    .service{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        
+    }
+        .service2{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    .service3{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    .service4{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    .function-4-R img{
+        max-width: 100%;
+
+    }
+    .function-4L{
+    max-width: 480%;
+    background: white;
+    padding: 20px;
+    position: static;
+    }
+    .moreinfo{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px;
+}
+.words-up {
+    max-width: 100%;
+    background: white;
+    padding: 30px 20px;
+    position: static; /* 取消原本的 absolute */
+    top: auto;
+    left: auto;
+    z-index: auto;
+    margin: 20px auto; /* 置中 */
+  }
+
+  .example{
+    flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        position: relative;
+  }
+  .example-pic img{
+    max-width: 100%;
+  }
+
+  .example-words{
+    justify-content: center;
+    position: static;
+    max-width: 100%;
+  }
+  .words-down{
+    max-width: 100%;
+  }
+    .title h2{
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    display: flex;
+  }
+    .askpeoplecontent{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+  }
+  .people1{
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+  }
+  .askpeoplecontent{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+  }
+  .askpeople{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .people1{
+    padding-left: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 300px;
+  }
+  .people2{
+    padding: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 300px;
+  }
+  .people3{
+    padding: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 300px;
+  }
+  .people4{
+    padding: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 300px;
+  }
+
+    .sub {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .sub-1{
+    width: 100%;
+    height: auto;         /* 不強制固定高度 */
+    aspect-ratio: 16 / 9; /* 保持橫幅比例裁切 */
+  }
+  .sub-2 {
+    width: 100%;
+    height: auto;         /* 不強制固定高度 */
+    aspect-ratio: 16 / 9; /* 保持橫幅比例裁切 */
+    
+  }
+
+   .sub-2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .sub-text {
+    padding: 20px;
+    position: static;
+    justify-content: center;
+    margin: 0 auto;
+    width:100% ;
+    display: block;
+    text-align: center;
+  }
+  .contact h2{
+    padding-left: 20px;
+  }
+  .contact-btn{
+        flex-wrap: wrap;
+    display: flex;
+    padding: 20px;
+}
+
+
+
+
+
+
+@media (max-width:375px) {
+    .intro{
+    padding: 30px 30px;
+    position: absolute;
+   
+    margin-left: 20px;
+    justify-content: center;
+    background: white;
+    align-items: center;
+    }
+    .title1 {
+    padding-top: 120px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    }
+    .function-1-L img{
+    max-width: 100%;
+
+    }
+    .function-1-R{
+    max-width: 480%;
+    background: white;
+    padding: 0px;
+    position: static;
+    }
+    .service{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        
+    }
+        .service2{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    .service3{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    .service4{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+        .function-2-R img{
+        max-width: 100%;
+
+    }
+    .function-2-L{
+    max-width: 480%;
+    background: white;
+    padding: 20px;
+    position: static;
+    }
+    .function-4-R img{
+        max-width: 100%;
+
+    }
+    .function-4L{
+    max-width: 480%;
+    background: white;
+    padding: 20px;
+    position: static;
+    }
+
+    .moreinfo{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px;
+}
+
+  .words-up {
+    max-width: 100%;
+    background: white;
+    padding: 30px 20px;
+    position: static; /* 取消原本的 absolute */
+    top: auto;
+    left: auto;
+    z-index: auto;
+    margin: 20px auto; /* 置中 */
+  }
+  .example-words{
+    top: 500px;
+    justify-content: center;
+    position: static;
+    max-width: 300px;
+  }
+    .example{
+    flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        position: relative;
+  }
+  .example-pic img{
+    max-width: 100%;
+  }
+  .example-pic{
+    max-width: 100%;
+    border-width: 10px;
+  }
+
+  .example-words{
+    justify-content: center;
+    position: static;
+    max-width: 100%;
+  }
+  .words-down{
+    max-width: 100%;
+  }
+  .title h2{
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    display: flex;
+  }
+    .askpeoplecontent{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+  }
+  .askpeople{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .people1{
+    padding-left: 40px;
+  }
+  .people2{
+    padding-left: 40px;
+  }
+  .people3{
+    padding-left: 40px;
+  }
+  .people4{
+    padding-left: 40px;
+  }
+
+    .sub-text {
+    padding: 10px;
+    position: absolute;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+      transform: translate(-50%, -50%); /* 置中 */
+      top: 30%;
+      left: 30%;
+     max-width: 200px;
+  }
+        
+}
+
